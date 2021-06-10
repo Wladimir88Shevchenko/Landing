@@ -1,0 +1,925 @@
+/* colors */
+
+
+
+$text: #001d26;
+//$lightBg: rgb(138, 207, 229);
+$iconsColor: rgb(138, 207, 229);
+$danger: #683440;
+$bgLight: white;
+$greenGb: #737b42;
+$greenText: #c2ba3e;
+
+
+/* ZZZ colors */
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;800&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+/* ZZZ FONTS */
+
+*{
+    font-family: 'Inter', sans-serif;
+    //font-family: 'Lobster', cursive;
+}
+
+button, input, a {
+    &:focus{
+        outline: none;
+    }
+}
+
+/* HEADER */
+
+/* HEADER LOGO */
+
+header{
+    background: #fff url(../assets/img/bg.jpg) center center no-repeat;
+    background-size: cover;
+    color: $bgLight;
+}
+
+header .row .logo{
+    display: flex;
+}
+
+
+header .row .logo img{
+    display: block;
+}
+
+
+header .row .logo .text-logo{
+    text-align: center;
+    display: table;
+    width: 100%;
+    height: 7.5rem;
+}
+
+header .row .logo .text-logo .text-logo-block{
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 0.2rem;
+}
+
+header .row .logo .text-logo .text-logo-block h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+header .row .logo .text-logo .text-logo-block p{
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+/* ZZZ HEADER LOGO */
+
+/* HEADER NUMBER */
+
+header .row .number{
+    font-size: 1.05rem;
+    text-align: center;
+    height: 7.5rem;
+}
+
+header .row .number p{
+    font-weight: 700;
+    height: 7.5rem;
+    line-height: 7.5rem;
+}
+
+/* ZZZ HEADER NUMBER */
+
+/* HEADER BUTTON */
+
+header .row .btn-cont{
+    display: table;
+    width: 100%;
+    height: 7.5rem;
+
+}
+
+header .row .btn-cont .btn-cont-block{
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.button{
+    width: 12.5rem;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background-color: $iconsColor;
+    color: $text;
+    transition: all 0.3s;
+}
+
+.button:hover{
+    background-color: $text;
+    color: $iconsColor;
+    border: 1px solid $iconsColor;
+}
+
+/* ZZZ HEADER BUTTON */
+
+/* MAIN ROW */
+
+.mainRow{
+    /* background: rgb(104, 47, 109); */
+    margin-top: 6.2rem;
+}
+
+.mainRow .leftSide h1{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    margin-bottom: 2.9rem;
+}
+
+.middleText{
+    font-size: 1.15rem;
+}
+
+.mainRow .leftSide .middleText{
+    width: 74%;
+    margin-bottom: 1.9rem;
+    &:last-child{
+        font-weight: 600;
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+}
+
+.mainRow .leftSide .priceBlock{
+    background-color: $iconsColor;
+    color: rgb(32, 32, 32);
+    padding: 1.5rem;
+    width: 74%;
+    font-size: 0.95rem;
+    & b{
+        font-size: 1.55rem; 
+        color: black;
+    }
+}
+
+.mainRow .rightSide{
+    background-color: $bgLight;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: black;
+}
+
+.mainRow .rightSide .middleText{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+label{
+    font-size: 0.7rem;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+/* .mainRow .rightSide label{
+    font-size: 0.7rem;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+} */
+
+input{
+    max-width: 100%;
+    margin-bottom: 1.2rem;
+    border: 2px solid #ddd;
+    padding: 0.2rem;
+
+}
+
+/* .mainRow .rightSide input{
+    max-width: 100%;
+    margin-bottom: 1.2rem;
+    border: 2px solid #ddd;
+    padding: 0.2rem;
+
+} */
+
+.mainRow .rightSide .button{
+    max-width: 100%;
+    height: 2.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.mainRow .rightSide small{
+    font-size: 0.66rem;
+}
+
+/* ZZZ MAIN ROW */
+
+/* ZZZ HEADER */
+
+/* FEATURES SLIDER */
+
+.feature {
+    overflow: hidden;
+}
+
+.feature .row {
+    margin-top: 4rem;
+    color: black;
+    /* background-color: rgb(70, 70, 70); */
+    
+}
+
+
+.feature .row h2{
+    text-align: center;
+}
+
+.feature .slider drag-scroll {
+    height: 240px;
+    width: 100%;
+    overflow: hidden;
+   /*  background-color: rgb(53, 26, 26); */
+}
+
+.feature .slider drag-scroll  .sliderItem {
+    height: 230px;
+    width: 22.5%;
+    margin-left: 3%;
+    text-align: center;
+    overflow: hidden;
+    &:first-child{
+        margin-left: 0;
+    }
+    /* background-color: rgb(20, 63, 38); */
+}
+
+.feature .slider drag-scroll  .sliderItem i{
+    font-size: 3rem;
+    color: $text;
+    
+}
+
+.feature .slider drag-scroll  .sliderItem h4{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.feature .slider drag-scroll  .sliderItem p{
+    font-size: 1rem;
+}
+
+.feature .slider .wrapper .wrapBtn{
+    display: none;
+    margin: 0 auto;
+    max-width: 20%;
+    /* background-color: rgb(16, 101, 122); */
+    button{
+        border-radius: 13%;
+        width: 45%;
+        display: inline-block;
+        height: 3rem;
+        font-size: 2rem;
+        background-color: $iconsColor;
+        color: $text;
+        transition: all 0.3s;
+        &:hover{
+            background-color: $text;
+            color: $iconsColor;  
+        }
+        &:last-child{
+            margin-left: 10%;
+        }
+    }
+
+}
+
+/* ZZZ FEATURES SLIDER */
+
+/* PRICE */
+.price{
+    margin-top: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgb(39, 39, 39);
+    color: $bgLight;
+    text-align: center;
+}
+
+.price .title h4{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.price .title p{
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.price .bookPriceBlock .col-lg-4 .wrapper{
+    background-color: $bgLight;
+    color: black;
+    padding: 1rem;
+    min-height: 39rem;
+    border-radius: 2%;
+    box-shadow: 0 0 10px rgba(255,255,255,0.4);
+    margin-top: 2rem;
+}
+
+.price .bookPriceBlock h5{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.price .bookPriceBlock img{
+    max-width: 98%;
+    margin: 1rem 0;
+}
+
+.price .bookPriceBlock h6{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.price .bookPriceBlock ul{
+    padding: 0;
+    min-height: 5rem;
+    /* background-color: rgb(71, 67, 67); */
+}
+
+.price .bookPriceBlock ul li{
+    list-style-type: none;
+    font-size: 0.8rem;
+}
+
+.price .bookPriceBlock ul li i{
+    color: $iconsColor;
+    margin-right: 0.3rem;
+}
+
+
+/* ZZZ PRICE */
+
+/* REVIWES */
+
+.reviews{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.reviews .sliders{
+    background-color: rgb(231, 231, 231);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* 
+drag-scroll{
+    background-color: rgb(78, 78, 78);
+} */
+
+drag-scroll p{
+    white-space: normal;
+}
+
+.reviews .title .col-lg-12 h4{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.reviews .sliders drag-scroll .sliderItemSecond .fotoramaSettingsMy{
+    display: flex;
+    align-items: center;
+    
+}
+
+.reviews .sliders drag-scroll .sliderItemSecond .reviewsPost p{
+    margin: 0;
+}
+
+.reviews .sliders drag-scroll .sliderItemSecond .reviewsPost 
+.media{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.reviews .sliders drag-scroll .sliderItemSecond .reviewsPost 
+.media img{
+    width: 4rem;
+    height: 4rem;
+} 
+
+.reviews .sliders drag-scroll .sliderItemSecond .reviewsPost
+.reviewText{
+    border: 2px solid $iconsColor;
+    padding: 0.7rem;
+    position: relative;
+
+    /* КРЮЧОК ДЛЯ КОМЕНТАРИЯ */
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: -2rem;
+        left: 4rem;
+        width: 2rem;
+        height: 2rem;
+        background-color: rgb(231, 231, 231);
+        border: 2px solid $iconsColor;
+        border-bottom: none;
+        border-top-right-radius: 100px;
+
+    }
+}
+
+.reviews .sliders .wrapBtn{
+    margin: 0 auto;
+    max-width: 20%;
+    /* background-color: rgb(16, 101, 122); */
+    button{
+        border-radius: 13%;
+        width: 50%;
+        display: inline-block;
+        height: 3rem;
+        font-size: 2rem;
+        background-color: $iconsColor;
+        color: $text;
+        transition: all 0.3s;
+        &:hover{
+            background-color: $text;
+            color: $iconsColor;  
+        }
+        &:last-child{
+            margin-left: 0%;
+        }
+    }
+}
+
+.oneMoreReview{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.oneMoreReview .wrapper{
+    text-align: center;
+    position: relative;
+    & h4{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    & .row{
+        margin-top: 1.5rem;
+    }
+    & input{
+        width: 100%;
+        //margin: 0 auto;
+    }
+    & button{
+        width: 35%;
+        height: 3rem;
+    }
+}
+
+
+
+
+/* ZZZ REVIWES */
+
+/* DOUBTS */
+
+.doubts{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgb(228, 228, 228);
+    color: black;
+    position: relative;
+}
+
+.doubts img{
+    position: absolute;
+    width: 25rem;
+    bottom: 0;
+    left: 50%;
+    margin-left: -16rem;
+}
+
+.doubts h4{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 4.4rem;
+}
+
+.doubts .list{
+    border: 2px solid rgb(167, 167, 167);
+    padding: 2rem;
+    
+    & ul{
+        margin-top: 2rem;
+        list-style: none;
+        padding: 0;
+        & li{
+            position: relative;
+            margin-bottom: 1rem;
+            i{
+                font-size: 1.3rem;
+                color: $danger;
+                margin-right: 0.5rem;
+            }
+
+
+        }
+        
+    }
+}
+
+.doubts .badLIst{
+    & h5{
+        color: rgb(167, 167, 167);
+    }
+}
+
+.doubts .goodLIst{
+    border: 2px solid $iconsColor;
+
+    & ul li i{
+        color: $iconsColor;
+    }
+}
+
+
+
+/* ZZZ DOUBTS */
+
+/* PRESENT */
+
+.present{
+    /* background: #fff url(../assets/img/bg2.jpg) center center no-repeat;
+    background-size: cover; */
+    color: $bgLight;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.present .presentRow{
+    & h2{
+        font-size: 2.1rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+
+    & .rightSide{
+        background-color: $bgLight;
+        padding: 1.5rem;
+        text-align: center;
+        margin-bottom: 5rem;
+        color: black;
+
+        & .middleText{
+            font-size: 1.1rem;
+        }
+
+        & .button{
+            max-width: 100%;
+            height: 2.6rem;
+            margin-bottom: 0.3rem;
+        }
+    }
+
+}
+
+/* ZZZ PRESENT */
+
+/* WHAT ELSE */
+
+.whatElse{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.whatElse h4{
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+.whatElse .container > p{
+    margin-bottom: 2rem;
+}
+
+
+.whatElse .col-md-4{
+    text-align: center;
+}
+
+.whatElse .col-md-4 img{
+    max-width: 100%;
+}
+
+.whatElse .col-md-4 button{
+    width: 75%;
+    height: 2.4rem;
+    margin: 0 auto;
+    
+}
+
+
+/* WHAT ELSE */
+
+/* FOOTER */
+
+footer{
+    margin-top: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgb(39, 39, 39);
+    color: $bgLight;
+    
+}
+
+footer .middle{
+    text-align: center;
+}
+
+footer .right{
+    text-align: right;
+    font-size: 3rem;
+    & a{
+        color: white;
+        margin-left: 2rem;
+        &:hover{
+            color: $iconsColor;
+        }
+    }
+    
+}
+
+
+/* ZZZ FOOTER */
+
+/* MEDIA */
+@media (max-width: 1199px){
+    .feature .slider drag-scroll  .sliderItem p{
+        font-size: 0.8rem;
+    }
+    .price .bookPriceBlock .col-lg-4 .wrapper{
+        min-height: 37rem;
+    }
+    .doubts img{
+        width: 20rem;
+        margin-left: -12rem;
+    }
+    .doubts .list ul li{
+        margin-bottom: 0.5rem;
+        font-size: 0.85rem;
+    }
+    footer .left{
+        & img{
+            max-width: 100%;
+            text-align: right;
+        }
+        & h2{
+            font-size: 1.3rem;
+            text-align: left;
+        }
+        & p{
+            margin-top: -0.5rem;
+            font-size: 0.7rem;
+        }
+
+    }
+    footer .right i{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 991px){
+    .mainRow{
+        margin-top: 2.2rem;
+    }
+    .mainRow .leftSide h1{
+        margin-bottom: 1.2rem;
+    }
+    .mainRow .leftSide .middleText{
+        margin-bottom: 0.9rem;
+        &:last-child{
+            margin-bottom: 0;
+            margin-top: 1rem;
+            text-align: center;
+        }
+    }
+    .mainRow .leftSide .priceBlock{
+        text-align: center;
+    }
+    .feature .slider drag-scroll  .sliderItem h4{
+        font-size: 1.3rem;
+    }
+    .feature .slider drag-scroll  .sliderItem p{
+        font-size: 0.7rem;
+    }
+
+    .price .container .col-lg-4 .wrapper{
+        max-width: 70%;
+        margin: 3rem auto;
+    }
+
+    .reviews .container .sliders drag-scroll .sliderItemSecond{
+        & p{
+            text-align: center;
+        }
+        & .media{
+            max-width: 50%;
+            margin: 2rem auto;
+        }
+
+        & .reviewText{
+            max-width: 80%;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+
+
+        & .reviewText::before{
+            left: 14rem;
+        }
+        
+    }
+
+    .reviews .container .sliders drag-scroll .sliderItemSecond .fotoramaSettingsMy{
+            max-width: 60%;
+            margin: 1rem auto;
+            //background-color: red;
+    }
+
+    .doubts .list ul li{
+        margin-bottom: 0.2rem;
+        font-size: 0.75rem;
+        & i{
+            font-size: 0.77rem;
+        }
+    }
+
+    
+}
+
+@media (max-width: 767px){
+    header{
+        text-align: center;
+    }
+
+    header .row .logo{
+        display: flex;
+        margin-top: 2rem;
+        margin-left: 5rem;
+        justify-content: center;
+        
+    }
+
+    header .row .logo .text-logo-block{
+        display: block;
+        
+    }
+
+    header .row .logo img{
+        display: inline-block;
+    }
+    header .row .logo .text-logo{
+        padding-top: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    header .row .number{
+        font-size: 1.45rem;
+        height: 3.5rem;
+    }
+    header .row .btn-cont .btn-cont-block{
+        text-align: center;
+        vertical-align: middle;
+    }
+    .mainRow{
+        margin-top: 0rem;
+    }
+    .mainRow .leftSide .middleText, .mainRow .leftSide .priceBlock{
+        width: 100%;
+    }
+    .mainRow .leftSide .middleText:last-child{
+        margin-bottom: 2rem;
+        margin-top: 0.5rem;
+    }
+    .mainRow .leftSide .priceBlock{
+        font-size: 1.25rem;
+        & b{
+            font-size: 1.55rem;
+        }
+    }
+
+    header{
+        overflow: hidden;
+    }
+
+
+    .feature .slider drag-scroll {
+        height: 170px;
+    }
+    
+    .feature .slider drag-scroll  .sliderItem {
+        height: 160px;
+        width: 50%;
+        margin-left: 0;
+        color: black;
+    }
+    
+    .feature .slider .wrapper .wrapBtn{
+        display: block;
+    }
+
+    .oneMoreReview .wrapper input{
+        max-width: 50%;
+        margin: 1rem auto;
+    }
+
+    .doubts img{
+        display: none;
+    }
+
+    .doubts .list{
+        margin-bottom: 2rem;
+    }
+
+    .doubts .list h5{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .doubts .list ul li{
+        margin-bottom: 0.5rem;
+        font-size: 1.3rem;
+        & i{
+            font-size: 1.0rem;
+            margin-right: 0.4rem;
+        }
+    }
+
+    .present {
+        text-align: center;
+    }
+
+    .whatElse .container > p{
+        font-size: 0.9rem;
+    }
+
+    .whatElse .col-md-4{
+        margin-bottom: 4rem;
+    }
+
+
+    footer{
+        & .left{
+            text-align: center;
+            & h2{
+                text-align: center;
+            }
+        }
+
+        & .right .wrapper{
+            max-width: 70%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+
+}
+
+@media (max-width: 575px){
+
+    .feature .slider drag-scroll {
+        height: 170px;
+        /* background-color: rgb(53, 26, 26); */
+    }
+    
+    .feature .slider drag-scroll  .sliderItem {
+        height: 160px;
+        width: 100%;
+    }
+}
+
+/* ZZZ MEDIA */

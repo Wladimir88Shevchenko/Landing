@@ -1,0 +1,431 @@
+<header>
+<div class="container">
+  <!-- лого телефон кнопка -->
+  <div class="row">
+    <div class="col-xl-4 col-lg-4 
+    col-md-4 col-sm-12 
+    logo">
+      <img src="../assets/img/logo.png" alt="shevchenko library logotip">
+      <div class="text-logo">
+        <div class="text-logo-block">
+          <h2>Shevchenko library</h2>
+          <p>писатели-фантасты</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-2 offset-xl-3 col-lg-2 offset-lg-2 
+    col-md-2 offset-md-1  col-sm-12 offset-sm-0 number">
+      <p>+38(067)1977696</p>
+    </div>
+    <div class="col-xl-3 col-lg-4 
+    col-md-5 col-sm-12
+    btn-cont">
+      <div class="btn-cont-block">
+        <button class="button">Купить книгу</button>
+      </div>
+    </div>
+  </div>
+   <!-- ZZZ лого телефон кнопка -->
+    <!-- главный блок -->
+
+    <div class="row mainRow">
+      <div class="col-xl-5 col-lg-6
+       col-md-6 col-sm-12
+       leftSide">
+        <h1>фэнтези литература про карсинор</h1>
+        <p class="middleText">интересные книги для тех кто не любит читать</p>
+        <div class="priceBlock">
+          Стоимость книги от <b>100</b> грн
+        </div>
+        <p class="middleText">оплата картой любого банка</p>
+      </div>
+      <div class="col-xl-3 offset-xl-4 col-lg-4 offset-lg-2 
+      col-md-5 offset-md-1 col-sm-6 offset-sm-3
+      col-6 offset-3
+      rightSide">
+        <form action="#">
+          <p class="middleText">
+            Для получения подарка при покупке укажите своё <strong>имя и номер</strong> 
+          </p>
+          <label for="clientName">Ваше имя</label>
+          <input id="clientName" type="text">
+          <label for="clientNumber">Номер телефона</label>
+          <input id="clientNumber" type="text">
+          <button class="button">Оставить заявку</button>
+          <small>Подарок в день обращения</small>
+        </form>
+      </div>
+    </div>
+
+    <!-- ZZZ главный блок -->
+</div>
+</header>
+
+<!-- блок преимущества -->
+
+<section class="feature">
+<div class="container">
+  <div class="row title">
+    <div class="col-lg-12">
+      <h2>Почему тебе нужна наша книга</h2>
+    </div>
+  </div>
+  <div class="row slider">
+    <div class="col-lg-12">
+      <div class="wrapper">
+        <drag-scroll #nav>
+          <div class="sliderItem" drag-scroll-item>
+            <i class="fas fa-dragon"></i>
+            <h4>Крутой сюжет</h4>
+            <p>Не заезженные истории. <br> Оригинальные персонажи<br> и очень много экшена</p>
+          </div>
+          <div class="sliderItem" drag-scroll-item>
+            <i class="fas fa-book"></i>
+            <h4>Малый объем</h4>
+            <p>Ты не заснёшь <br> читая эти книги</p>
+          </div>
+          <div class="sliderItem" drag-scroll-item>
+            <i class="fas fa-coins"></i>
+            <h4>Цена</h4>
+            <p>На нашем сайте <br> самые низкие цены</p>
+          </div>
+          <div class="sliderItem" drag-scroll-item>
+            <i class="fas fa-gift"></i>
+            <h4>Подарок</h4>
+            <p>Утонченный дизайн <br> книг Карсинор делает их <br> прекрасным подарком</p>
+          </div>
+          
+        </drag-scroll>
+        <div class="wrapBtn">
+          <button (click)="moveLeft()"><i class="fas fa-arrow-left"></i></button>
+        <button (click)="moveRight()"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section> 
+
+<!-- ZZZ блок преимущества -->
+
+
+<!-- блок цены -->
+
+<section class="price">
+<div class="container">
+  <div class="row title">
+    <div class="col-lg-12">
+      <h4>Цены</h4>
+      <p>Выбери книгу которую еще не читал</p>
+    </div>
+  </div>
+  <div class="row bookPriceBlock">
+    <div class="col-lg-4">
+      <div class="wrapper">
+        <h5>Карсинор. Шелест Сирриасы</h5>
+        <img src="../assets/img/rustle.png" alt="Карсинор. Шелест Сирриасы">
+        <h6>100 грн</h6>
+        <ul>
+          <li><i class="fas fa-chevron-down"></i>Кратчайший объем</li>
+          <li><i class="fas fa-chevron-down"></i>Первая книга серии Карсинор</li>
+          <li><i class="fas fa-chevron-down"></i>16+</li>
+        </ul>
+        <button class="button">Заказать</button>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="wrapper">
+        <h5>Карсинор. Охота на Валлеров</h5>
+        <img src="../assets/img/hanting.png" alt=">Карсинор. Охота на Валлеров">
+        <h6>150 грн</h6>
+        <ul>
+          <li><i class="fas fa-chevron-down"></i>Вторая книга из серии Карсинор</li>
+          <li><i class="fas fa-chevron-down"></i>В два раза больше харизматичных персонажей</li>
+          <li><i class="fas fa-chevron-down"></i>16+</li>
+        </ul>
+        <button class="button">Заказать</button>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="wrapper">
+        <h5>Карсинор. Ярость Берсерков</h5>
+        <img src="../assets/img/rustle.png" alt="Карсинор. Ярость Берсерков">
+        <h6>150 грн</h6>
+        <ul>
+          <li><i class="fas fa-chevron-down"></i>Третья книга из серии Карсинор</li>
+          <li><i class="fas fa-chevron-down"></i>Открытие третьей планеты</li>
+          <li><i class="fas fa-chevron-down"></i>16+</li>
+        </ul>
+        <button class="button">Заказать</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+<!-- ZZZ блок цены -->
+
+<!-- блок отзывы -->
+
+<section class="reviews">
+  <div class="container">
+    <div class="row title">
+      <div class="col-lg-12">
+        <h4>Отзывы</h4>
+      </div>
+    </div>
+    <div class="row sliders">
+      
+      <drag-scroll #navi>
+
+        <div class="sliderItemSecond" drag-scroll-item>
+          <div class="row">
+            <div class="col-lg-5 fotoramaSettingsMy">
+              <div class="fotorama">
+                <img src="../assets/img/1.jpg">
+                <img src="../assets/img/2.jpg">
+                <img src="../assets/img/3.jpg">
+              </div>
+            </div>
+            <div class="col-lg-7 reviewsPost">
+              <p>г. Киев</p>
+              <p>Читает литературу с 6 лет</p>
+              <p>Уже прочитала 2 книги из серии Карсинор</p>
+              <div class="media">    
+                <img src="../assets/img/comentator.png" class="mr-3 rounded-circle" alt="читатель">
+                <div class="media-body">
+                  <span>Читатель</span>
+                  <h5 class="mt-0">Вероника Бабочкина</h5>    
+                </div>          
+              </div>
+              <div class="reviewText">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit assumenda, ut accusantium et numquam hic nemo deleniti doloribus quae mollitia facilis, vitae tenetur provident eum quas maxime esse, incidunt soluta?
+                </p>                                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sliderItemSecond" drag-scroll-item>
+          <div class="row">
+            <div class="col-lg-5 fotoramaSettingsMy">
+              <div class="fotorama">
+                <img src="../assets/img/1.jpg">
+                <img src="../assets/img/2.jpg">
+                <img src="../assets/img/3.jpg">
+              </div>
+            </div>
+            <div class="col-lg-7 reviewsPost">
+              <p>г. Киев</p>
+              <p>Читает литературу с 6 лет</p>
+              <p>Уже прочитала 2 книги из серии Карсинор</p>
+              <div class="media">    
+                <img src="../assets/img/comentator.png" class="mr-3 rounded-circle" alt="читатель">
+                <div class="media-body">
+                  <span>Читатель</span>
+                  <h5 class="mt-0">Вероника Бабочкина</h5>    
+                </div>          
+              </div>
+              <div class="reviewText">
+                <p>
+                  Lorem 2 ipsum dolor sit, amet consectetur adipisicing elit. Fugit assumenda, ut accusantium et numquam hic nemo deleniti doloribus quae mollitia facilis, vitae tenetur provident eum quas maxime esse, incidunt soluta?
+                </p>                                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sliderItemSecond" drag-scroll-item>
+          <div class="row">
+            <div class="col-lg-5 fotoramaSettingsMy">
+              <div class="fotorama">
+                <img src="../assets/img/1.jpg">
+                <img src="../assets/img/2.jpg">
+                <img src="../assets/img/3.jpg">
+              </div>
+            </div>
+            <div class="col-lg-7 reviewsPost">
+              <p>г. Киев</p>
+              <p>Читает литературу с 6 лет</p>
+              <p>Уже прочитала 2 книги из серии Карсинор</p>
+              <div class="media">    
+                <img src="../assets/img/comentator.png" class="mr-3 rounded-circle" alt="читатель">
+                <div class="media-body">
+                  <span>Читатель</span>
+                  <h5 class="mt-0">Вероника Бабочкина</h5>    
+                </div>          
+              </div>
+              <div class="reviewText">
+                <p>
+                  Lorem3 ipsum dolor sit, amet consectetur adipisicing elit. Fugit assumenda, ut accusantium et numquam hic nemo deleniti doloribus quae mollitia facilis, vitae tenetur provident eum quas maxime esse, incidunt soluta?
+                </p>                                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </drag-scroll>
+      <div class="wrapBtn">
+        <button (click)="moveLeftSlid()"><i class="fas fa-arrow-left"></i></button>
+        <button (click)="moveRightSlid()"><i class="fas fa-arrow-right"></i></button>
+      </div>
+
+
+
+
+
+     
+      
+    </div>
+
+    <div class="row oneMoreReview">
+      <div class="col-md-8 offset-md-2">
+        <div class="wrapper">
+          <h4>Хотите книгу и подарок?</h4>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="clientName2">Ваше имя</label>
+              <input id="clientName2" type="text" placeholder="Ваше имя">
+            </div>
+            <div class="col-md-6">
+              <label for="clientNumber2">Ваш номер </label>
+              <input id="clientNumber2" type="text" placeholder="Ваш номер">
+            </div>
+          </div>
+          <button class="button">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ZZZ блок отзывы -->
+
+<!-- блок развеиваем сомнения -->
+
+<section class="doubts">
+<div class="container">
+  <h4>Мы развеем все опасения</h4>
+  <div class="row wrapper">
+    <div class="col-md-5 badLIst list">
+      <h5>Какие могут быть опасения:</h5>
+      <ul>
+        <li><i class="fas fa-skull-crossbones"></i>Я никогда не читал книги</li>
+        <li><i class="fas fa-skull-crossbones"></i>Я боюсь больших книг</li>
+        <li><i class="fas fa-skull-crossbones"></i>Меня тяжело заинтересовать</li>
+        <li><i class="fas fa-skull-crossbones"></i>Я не люблю тратить деньги</li>
+      </ul>
+    </div>
+    <div class="col-md-5 offset-md-2 goodLIst list">
+      <h5>Мы предлагаем:</h5>
+      <ul>
+        <li><i class="fas fa-chevron-down"></i>Книги для людей, которые не любят читать</li>
+        <li><i class="fas fa-chevron-down"></i>Все книги имеют маленький объем</li>
+        <li><i class="fas fa-chevron-down"></i>Много экшена</li>
+        <li><i class="fas fa-chevron-down"></i>Комфортная цена</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<img src="../assets/img/woman.png" alt="woman-doubts">
+</section>
+
+<!-- ZZZ блок развеиваем сомнения -->
+
+<!-- блок про книгу на подарок -->
+
+<section class="present parallax-window" data-parallax="scroll" data-image-src="../assets/img/bg2.jpg">
+  <div class="container">
+    <div class="row presentRow">
+      <div class="col-xl-5 col-lg-6
+       col-md-6 col-sm-12
+       leftSide">
+        <h2>хотите купить книгу на подарок?</h2>
+        <p class="middleText">Отличный выбор. Красивая и интересная книга — это действительно, лучший подарок.</p>
+        <p class="middleText">Подарите сказочные эмоции своим близким.</p>
+      </div>
+      <div class="col-xl-3 offset-xl-4 col-lg-4 offset-lg-2 
+      col-md-5 offset-md-1 col-sm-6 offset-sm-3
+      col-6 offset-3
+      rightSide">
+        <form action="#">
+          <p class="middleText">
+            Оставьте контактные данные для связи 
+          </p>
+          <label for="clientName">Ваше имя</label>
+          <input id="clientName" type="text">
+          <label for="clientNumber">Номер телефона</label>
+          <input id="clientNumber" type="text">
+          <button class="button">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ZZZ блок про книгу на подарок -->
+
+<!-- блок что еще можем предложить -->
+
+<section class="whatElse">
+  <div class="container">
+    <h4>Для любителей нашего творчества</h4>
+    <p>Помимо книг, мы ведем цитатную страничку в <i class="fab fa-instagram"></i> и пару каналов на <i class="fab fa-youtube"></i></p>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="../assets/img/library.jpg" alt="Shevchenko library">
+        <p><i class="fab fa-youtube"></i> Для тех, кто любит читать</p>
+        <button class="button" (click)="moveLib()">Перейти</button>
+      </div>
+      <div class="col-md-4">
+        <img src="../assets/img/insta.jpg" alt="Shevchenko library instagram">
+        <p><i class="fab fa-instagram"></i> Для тех, кто любит думать</p>
+        <button class="button" (click)="moveInsta()">Перейти</button>
+      </div>
+      <div class="col-md-4">
+        <img src="../assets/img/dragons.jpg" alt="Old dragons chanale">
+        <p><i class="fab fa-youtube"></i> Для тех, кто любит играть</p>
+        <button class="button" (click)="moveDragons()">Перейти</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ZZZ блок что еще можем предложить -->
+
+<!-- подвал -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 logo left">
+        <div class="row">
+          <div class="col-md-4 ">
+            <img src="../assets/img/logo.png" alt="shevchenko library logotip">
+          </div>
+          <div class="col-md-8">
+            <div class="text-logo">
+              <div class="text-logo-block">
+                <h2>Shevchenko library</h2>
+                <p>писатели-фантасты</p>
+            </div>
+          </div>
+        </div>        
+      </div>
+      </div>
+      <div class="col-md-4 middle">
+        <p>+38(067)1977696<br>wladimir.shevchenko95@gmail.com</p>
+      </div>
+      <div class="col-md-4 right">
+        <div class="wrapper">
+          <a href="https://www.youtube.com/channel/UC51IQYFqMjtAIr2pG7jIlKQ"><i class="fab fa-youtube"></i></a> <a href="https://www.instagram.com/shevchenko_lib/"><i class="fab fa-instagram"></i></a>
+          <a href="https://t.me/shevchenko_lib"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ZZZ подвал -->
